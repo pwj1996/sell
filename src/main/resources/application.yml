@@ -1,0 +1,13 @@
+#logging.pattern.console="%d - %msg%n"
+##logging.path=F:/MyProject/data/sell
+#logging.file=F:/MyProject/data/sell/sell.log
+#logging.level.com.zcx.sell.LoggerTest=debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.48.145/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
