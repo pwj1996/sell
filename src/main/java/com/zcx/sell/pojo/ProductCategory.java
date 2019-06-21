@@ -8,7 +8,7 @@ import javax.persistence.*;
 /**
  * @author zoucaoxin
  * @date 2019/6/13
- * @description
+ * @description 商品类目
  */
 @Entity
 @DynamicUpdate
