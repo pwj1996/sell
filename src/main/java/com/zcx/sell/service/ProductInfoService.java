@@ -1,5 +1,6 @@
 package com.zcx.sell.service;
 
+import com.zcx.sell.dto.CartDTO;
 import com.zcx.sell.pojo.ProductInfo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -25,5 +26,15 @@ public interface ProductInfoService {
 
     ProductInfo save(ProductInfo productInfo);
 
+    /**
+     * 加库存
+     * @param cartDTOList
+     */
+    void increaseStock(List<CartDTO> cartDTOList);
 
+    /**
+     * 减库存
+     * @param cartDTOList
+     */
+    void decreaseStock(List<CartDTO> cartDTOList);
 }
